@@ -1,0 +1,42 @@
+body {
+    font-family: 'Lilita One', cursive;
+    color: rgb(65, 109, 109);
+}
+
+h4, h5 {
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    color: rgb(3, 12, 12);
+}
+
+.social-logo {
+    width: 40px;
+    height: auto;
+}
+
+.tecnologia-logo {
+    height: 60px;
+    width: auto;
+}
+
+.columna-acerca-de-mi {
+    font-size: x-large;
+}
+
+.columna-acerca-de-mi.derecha {
+    font-size: large;
+}
+
+.imagen-perfil {
+    width: 300px;
+    height: auto;
+}
+
+.subrayado {
+    border-bottom: 1px solid rgb(65, 109, 109);
+    color: rgb(73, 182, 228);
+}
+
+.redondeado {
+    border-end-end-radius: 40px;
+}

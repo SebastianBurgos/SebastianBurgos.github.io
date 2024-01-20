@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mi Portafolio</title>
+  <link rel="shortcut icon" href="./img/logos/favicon.ico" />
+  <!-- Estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Estilos personalizados-->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <!-- jQuery y Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top redondeado">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#acerca-de-mi">Acerca de mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#acerca-de-mi">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron jumbotron-fluid bg-info text-white redondeado">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 pt-4 mt-5">Hola, bienvenido a mi portafolio 🦖</h1>
+          <p class="lead mt-4">Soy Sebastian Burgos Puentes, Ingeniero en sistemas
+            y computación y desarrollador backend en JAVA y NodeJS con una gran habilidad
+            de aprender nuevas tecnologías.</p>
+          <div class="d-flex flex-row">
+            <!-- Ícono de LinkedIn -->
+            <div class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/sebastian-burgos-puentes-218023247/" target="_blank">
+                <img src="./img/logos/linkedinlogo.png" alt="LinkedIn Icon" class="social-logo">
+              </a>
+            </div>
+            <!-- Ícono de GitHub -->
+            <div class="nav-item">
+              <a class="nav-link" href="https://github.com/SebastianBurgos" target="_blank">
+                <img src="./img/logos/githublogo.png" alt="GitHub Icon" class="social-logo">
+              </a>
+            </div>
+            <!-- Ícono para descargar CV -->
+            <div class="nav-item">
+              <a class="nav-link" href="cv.pdf" download="cv.pdf">
+                <img src="./img/logos/portafoliologo.png" alt="CV Icon" class="social-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mt-2">
+          <img src="./img/imagen_perfil.png" class="imagen-perfil">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+      <h1 class="text-center mb-4 mt-4 text-dark">Proyectos</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./img/proyectos/loginpowercoffee.png" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">PowerCoffee</h5>
+              <p class="card-text">Participación (Backend) de un Sistema de gestión integral web para cafeterías (SaaS) desarrollado con JAVA Spring Boot,
+                es un proyecto API REST full stack React - JAVA Spring Boot - Postgress el cual cuenta con
+                un sistema de autenticación y autorización con Spring Security y JWT, respuestas HTTP claras
+                y descriptivas, ORM con JPA, pruebas unitarias con JUnit, notificaciones por email con JavaMail,
+                sistema de logger, entre otras funcionalidades.
+              </p>
+              <a href="https://github.com/SebastianBurgos/PowercoffeeBackend.git" class="btn btn-info btn-block">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./img/proyectos/microservicios-orquestacion.jpg" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Sistema de Multiples Microservicios</h5>
+              <p class="card-text">Sistema de multiples microservicios API REST dockerizados y orquestados que permiten la gestión
+                de usuarios, autenticación y perfiles y que cuenta con gestión de logs y una API GATEWAY, además de un sistema
+                de envío de mensajes con RabbitMQ, todo el sistema se encuentra documentado en Swagger con OpenAPI y descripción natural usando Gherkin.
+                Este sistema se desarrolló en Python, NodeJS, Golang y el uso de Dockerfile, OpenAPI con .yaml y Gherkin.</p>
+              <a href="https://github.com/SebastianBurgos/REST-API-container-orchestration.git" class="btn btn-info btn-block">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./img/proyectos/egresadosapp.png" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Egresados UQ</h5>
+              <p class="card-text">Aplicación Web para la acreditación de la Universidad del Quindío que permite gestionar con
+                una vista de mapa dinamico la ubicación y datos de contacto de los graduados de la misma. Desarrollada completamente
+                por mí con un stack EJS - NodeJS con Express - MySQL posee una arquitectura clara y dinamica que permite la gestion
+                completa de los datos de los graduados, importación y exportación de los datos a Excel, uso de APIS como geonames y Leaflet,
+                tecnología EJS y manejo de imagenes con Cloudinary. implementación de middlewares, permisos por roles, entre otras cosas.</p>
+              <a href="https://github.com/SebastianBurgos/EgresadosUQ.git" class="btn btn-info btn-block">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de mí -->
+  <section id="acerca-de-mi" class="py-5">
+    <div class="container mt-4">
+      <h1 class="text-center mb-4 text-dark">Acerca de mí</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="columna-acerca-de-mi">Me considero una persona ágil al momento de encontrar soluciones y resolver
+            problemas
+            de manera eficiente, con una gran capacidad de adaptación a los cambios y a los nuevos entornos. <br><br>
+
+            Mi principal objetivo es aprender y mejorar cada día más, seguir rutinas
+            que me ayuden en mis procesos de habilidades tanto de <span class="subrayado">desarrollo, análisis de
+              software y aptitudes blandas</span>
+            en una empresa dedicada que me brinde la oportunidad de crecer profesionalmente y personalmente.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-mr-4 columna-acerca-de-mi derecha">
+          <h4>Mis Habilidades</h4>
+          <p>
+            Enseñanza, liderazgo, trabajo en equipo, comunicación, me he
+            desempeñado
+            <span class="subrayado">brindando asesorías de programación a estudiantes de mi Universidad y como líder de
+              equipo en los proyectos de desarrollo de software de la misma.</span>
+          </p>
+          <ul>
+            <h5>Tecnologías:</h5>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col">
+                  <img src="./img/logos/javalogo.png" alt="Logo de Java" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/javafxlogo.png" alt="Logo de JavaFX" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/springbootlogo.png" alt="Logo de Spring Boot" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/bootstraplogo.png" alt="Logo de Spring Boot" class="tecnologia-logo" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img src="./img/logos/gradlelogo.png" alt="Logo de Gradle" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/mavenlogo.png" alt="Logo de Maven" class="tecnologia-logo" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img src="./img/logos/nodejslogo.png" alt="Logo de NodeJS" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/web3logo.png" alt="Logo de Web3" class="tecnologia-logo" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img src="./img/logos/pythonlogo.png" alt="Logo de Python" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/mysqllogo.png" alt="Logo de Mysql" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/postgresslogo.png" alt="Logo de Postgress" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/dockerlogo.png" alt="Logo de Postgress" class="tecnologia-logo" />
+                </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col">
+                  <img src="./img/logos/amazonec3logo.png" alt="Logo de AWS" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/virtualboxlogo.png" alt="Logo de VirtualBox" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/linuxlogo.png" alt="Logo de Linux" class="tecnologia-logo" />
+                </div>
+                <div class="col">
+                  <img src="./img/logos/gitlogo.png" alt="Logo de Linux" class="tecnologia-logo" />
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="p-5 mt-5">
+    <div class="container">
+      <h1 class="text-center mb-4 mt-5 text-dark">Contacto</h1>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card p-4">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info btn-block">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 - Sebastian Burgos Puentes</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">Inicio</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">Acerca de</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">Proyectos</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap y JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/esm/popper-base.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
